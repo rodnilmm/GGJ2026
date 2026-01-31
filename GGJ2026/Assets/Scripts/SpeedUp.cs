@@ -2,6 +2,9 @@ using UnityEngine;
 
 public class SpeedUp : MonoBehaviour
 {
+    [SerializeField] private float speedBuff = 10f;
+    [SerializeField] private float buffDuration = 5f;
+
     // Called when another collider enters the trigger collider attached to this object
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -12,8 +15,8 @@ public class SpeedUp : MonoBehaviour
             var playerController = collision.GetComponent<MovementController2D>();
             if (playerController != null)
             {
-                playerController.moveSpeed = 10f;
-                Debug.Log("Player speed increased to 10f");
+                playerController.ApplySpeedBuff(speedBuff, buffDuration);
+                Debug.Log($"Player speed increased to {speedBuff} for {buffDuration} seconds");
             }
 
             // Destroy the pickup object after collection
