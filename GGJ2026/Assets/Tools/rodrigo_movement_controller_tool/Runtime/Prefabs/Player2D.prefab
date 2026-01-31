@@ -252,6 +252,7 @@ MonoBehaviour:
   faceY: 0
   anim:
   - {fileID: 4025541169572740686}
+  - {fileID: 650690163996206342}
   playerCamera: {fileID: 7987174064045491239}
 --- !u!70 &8548358603221786430
 CapsuleCollider2D:
@@ -461,6 +462,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7831876951335594062}
   - component: {fileID: 1881507481577293154}
+  - component: {fileID: 650690163996206342}
   m_Layer: 0
   m_Name: Ropa
   m_TagString: Untagged
@@ -530,7 +532,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_MaskInteraction: 0
   m_Sprite: {fileID: 1221414805912599840, guid: ba9cc04cc26d0c741b801d5c96bbea00, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -542,6 +544,28 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!95 &650690163996206342
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6294525105276212127}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 481b136b45730bf4f927dc1369d31370, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &7436306880271413346
 GameObject:
   m_ObjectHideFlags: 0
@@ -689,7 +713,7 @@ MonoBehaviour:
   WorldUpOverride: {fileID: 0}
   ChannelMask: -1
   UpdateMethod: 2
-  BlendUpdateMethod: 1
+  BlendUpdateMethod: 0
   LensModeOverride:
     Enabled: 0
     DefaultMode: 2

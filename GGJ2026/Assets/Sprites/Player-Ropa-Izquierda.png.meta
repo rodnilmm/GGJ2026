@@ -1,82 +1,49 @@
 fileFormatVersion: 2
-guid: e7c98534915421f428d3dc999a05fceb
+guid: 3b33fe53a24163746999a0eb20bd187a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4439573445830450782
-    second: Player-Body-Izquierda_0
+      213: 5446503685244971019
+    second: Player-Ropa-Izquierda_0
   - first:
-      213: -7293635278425982813
-    second: Player-Body-Izquierda_1
+      213: 4431019094549163633
+    second: Player-Ropa-Izquierda_1
   - first:
-      213: 6303780400455442124
-    second: Player-Body-Izquierda_2
+      213: 1816061125673461968
+    second: Player-Ropa-Izquierda_2
   - first:
-      213: -4355935809517797699
-    second: Player-Body-Izquierda_3
+      213: -1461194877030185762
+    second: Player-Ropa-Izquierda_3
   - first:
-      213: -4453635946397933614
-    second: Player-Body-Izquierda_4
+      213: -7184215449887287468
+    second: Player-Ropa-Izquierda_4
   - first:
-      213: 7569177451386992898
-    second: Player-Body-Izquierda_5
+      213: -1850432597527111816
+    second: Player-Ropa-Izquierda_5
   - first:
-      213: -3211044916194524466
-    second: Player-Body-Izquierda_6
+      213: 2109443398554522352
+    second: Player-Ropa-Izquierda_6
   - first:
-      213: -1932007025919191138
-    second: Player-Body-Izquierda_7
+      213: 4924036660416937208
+    second: Player-Ropa-Izquierda_7
   - first:
-      213: 882530371961149364
-    second: Player-Body-Izquierda_8
+      213: -7967415214882814144
+    second: Player-Ropa-Izquierda_8
   - first:
-      213: -384172641191381390
-    second: Player-Body-Izquierda_9
+      213: -1129077537151883128
+    second: Player-Ropa-Izquierda_9
   - first:
-      213: 4586259370561494132
-    second: Player-Body-Izquierda_10
+      213: -1672799403691786792
+    second: Player-Ropa-Izquierda_10
   - first:
-      213: -8552164056225901401
-    second: Player-Body-Izquierda_11
+      213: 2490169354162895933
+    second: Player-Ropa-Izquierda_11
   - first:
-      213: -4370553024758545162
-    second: Player-Body-Izquierda_12
+      213: 55045383181964407
+    second: Player-Ropa-Izquierda_12
   - first:
-      213: 3740680282158070293
-    second: Player-Body-Izquierda_13
-  - first:
-      213: -714975073697090515
-    second: Player-Body-Izquierda_14
-  - first:
-      213: 1066835169514340957
-    second: Player-Body-Izquierda_15
-  - first:
-      213: -1727141802343099810
-    second: Player-Body-Izquierda_16
-  - first:
-      213: 9124465200006628305
-    second: Player-Body-Izquierda_17
-  - first:
-      213: 2917601546140482435
-    second: Player-Body-Izquierda_18
-  - first:
-      213: -2560394161861624256
-    second: Player-Body-Izquierda_19
-  - first:
-      213: 1732446840717699210
-    second: Player-Body-Izquierda_20
-  - first:
-      213: -8711180082349410425
-    second: Player-Body-Izquierda_21
-  - first:
-      213: -4103675153790334382
-    second: Player-Body-Izquierda_22
-  - first:
-      213: 5549997216233487614
-    second: Player-Body-Izquierda_23
-  - first:
-      213: -6839527705124577669
-    second: Player-Body-Izquierda_24
+      213: 7477526901075747781
+    second: Player-Ropa-Izquierda_13
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -185,183 +152,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Player-Body-Izquierda_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 80
-        width: 40
-        height: 40
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e5e1bf0f6888c9d30800000000000000
-      internalID: 4439573445830450782
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Player-Body-Izquierda_1
-      rect:
-        serializedVersion: 2
-        x: 40
-        y: 80
-        width: 40
-        height: 40
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3a8792c8b5dc7ca90800000000000000
-      internalID: -7293635278425982813
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Player-Body-Izquierda_2
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 80
-        width: 40
-        height: 40
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: cce573710e68b7750800000000000000
-      internalID: 6303780400455442124
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Player-Body-Izquierda_3
-      rect:
-        serializedVersion: 2
-        x: 120
-        y: 80
-        width: 40
-        height: 40
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: dbeb941c57b9c83c0800000000000000
-      internalID: -4355935809517797699
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Player-Body-Izquierda_4
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 40
-        width: 40
-        height: 40
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2df5a0004b18132c0800000000000000
-      internalID: -4453635946397933614
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Player-Body-Izquierda_5
-      rect:
-        serializedVersion: 2
-        x: 40
-        y: 40
-        width: 40
-        height: 40
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 20971dfe9ce1b0960800000000000000
-      internalID: 7569177451386992898
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Player-Body-Izquierda_6
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 40
-        width: 40
-        height: 40
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ec2c66c59a31073d0800000000000000
-      internalID: -3211044916194524466
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Player-Body-Izquierda_7
-      rect:
-        serializedVersion: 2
-        x: 120
-        y: 40
-        width: 40
-        height: 40
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e97178c98d12035e0800000000000000
-      internalID: -1932007025919191138
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Player-Body-Izquierda_8
+      name: Player-Ropa-Izquierda_0
       rect:
         serializedVersion: 2
         x: 0
@@ -376,14 +167,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4b7dc3c82b06f3c00800000000000000
-      internalID: 882530371961149364
+      spriteID: b08e1e2be3ed59b40800000000000000
+      internalID: 5446503685244971019
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player-Body-Izquierda_9
+      name: Player-Ropa-Izquierda_1
       rect:
         serializedVersion: 2
         x: 40
@@ -398,14 +189,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2763d5da4052baaf0800000000000000
-      internalID: -384172641191381390
+      spriteID: 17e6393d3642e7d30800000000000000
+      internalID: 4431019094549163633
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player-Body-Izquierda_10
+      name: Player-Ropa-Izquierda_2
       rect:
         serializedVersion: 2
         x: 80
@@ -420,14 +211,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 47cdf16399aa5af30800000000000000
-      internalID: 4586259370561494132
+      spriteID: 0d8a92ec8f1f33910800000000000000
+      internalID: 1816061125673461968
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player-Body-Izquierda_11
+      name: Player-Ropa-Izquierda_3
       rect:
         serializedVersion: 2
         x: 120
@@ -442,8 +233,140 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7a49ac72a1c905980800000000000000
-      internalID: -8552164056225901401
+      spriteID: ed4cef6400bc8bbe0800000000000000
+      internalID: -1461194877030185762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-Ropa-Izquierda_4
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4575897ac1a8c4c90800000000000000
+      internalID: -7184215449887287468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-Ropa-Izquierda_5
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 877d7974b51f156e0800000000000000
+      internalID: -1850432597527111816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-Ropa-Izquierda_6
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f292ac389f364d10800000000000000
+      internalID: 2109443398554522352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-Ropa-Izquierda_7
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fcf6250141b55440800000000000000
+      internalID: 4924036660416937208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-Ropa-Izquierda_8
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0470ed2431e0e6190800000000000000
+      internalID: -7967415214882814144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-Ropa-Izquierda_9
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 888603a46f5b450f0800000000000000
+      internalID: -1129077537151883128
       vertices: []
       indices: 
       edges: []
@@ -452,7 +375,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 1f49c4ee7cc89fa44b7775ddc0de8c3c
+    spriteID: da166695c899a8d44a9e1eadadb021f1
     internalID: 0
     vertices: []
     indices: 
@@ -464,18 +387,16 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":40.0,"y":40.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Player-Body-Izquierda_0: 4439573445830450782
-      Player-Body-Izquierda_1: -7293635278425982813
-      Player-Body-Izquierda_10: 4586259370561494132
-      Player-Body-Izquierda_11: -8552164056225901401
-      Player-Body-Izquierda_2: 6303780400455442124
-      Player-Body-Izquierda_3: -4355935809517797699
-      Player-Body-Izquierda_4: -4453635946397933614
-      Player-Body-Izquierda_5: 7569177451386992898
-      Player-Body-Izquierda_6: -3211044916194524466
-      Player-Body-Izquierda_7: -1932007025919191138
-      Player-Body-Izquierda_8: 882530371961149364
-      Player-Body-Izquierda_9: -384172641191381390
+      Player-Ropa-Izquierda_0: 5446503685244971019
+      Player-Ropa-Izquierda_1: 4431019094549163633
+      Player-Ropa-Izquierda_2: 1816061125673461968
+      Player-Ropa-Izquierda_3: -1461194877030185762
+      Player-Ropa-Izquierda_4: -7184215449887287468
+      Player-Ropa-Izquierda_5: -1850432597527111816
+      Player-Ropa-Izquierda_6: 2109443398554522352
+      Player-Ropa-Izquierda_7: 4924036660416937208
+      Player-Ropa-Izquierda_8: -7967415214882814144
+      Player-Ropa-Izquierda_9: -1129077537151883128
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

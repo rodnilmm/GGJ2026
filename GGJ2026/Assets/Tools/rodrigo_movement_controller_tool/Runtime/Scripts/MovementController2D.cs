@@ -27,8 +27,19 @@ public class MovementController2D : MonoBehaviour
         // Only update facing direction if there is input
         if (input.sqrMagnitude > 0.01f)
         {
+            for (int i = 0; i < anim.Length; i++)
+            {
+                anim[i].SetBool("Walking", true);
+            }
             faceX = input.x;
             faceY = input.y;
+        }
+        else
+        {
+            for (int i = 0; i < anim.Length; i++)
+            {
+                anim[i].SetBool("Walking", false);
+            }
         }
     }
 
