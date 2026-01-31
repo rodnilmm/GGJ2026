@@ -1,0 +1,1274 @@
+fileFormatVersion: 2
+guid: ba9cc04cc26d0c741b801d5c96bbea00
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1221414805912599840
+    second: Player-Ropa_0
+  - first:
+      213: -2466237943499859082
+    second: Player-Ropa_1
+  - first:
+      213: 7009026720456045925
+    second: Player-Ropa_2
+  - first:
+      213: 1320959672444049631
+    second: Player-Ropa_3
+  - first:
+      213: 8354984060879380401
+    second: Player-Ropa_4
+  - first:
+      213: 5945898899227511100
+    second: Player-Ropa_5
+  - first:
+      213: -1418985567905002596
+    second: Player-Ropa_6
+  - first:
+      213: -96289793433573954
+    second: Player-Ropa_7
+  - first:
+      213: -1939752777603579147
+    second: Player-Ropa_8
+  - first:
+      213: 3527935410186734271
+    second: Player-Ropa_9
+  - first:
+      213: -2912123278594563035
+    second: Player-Ropa_10
+  - first:
+      213: -948243799248711921
+    second: Player-Ropa_11
+  - first:
+      213: 7619874660170136506
+    second: Player-Ropa_12
+  - first:
+      213: -4355449340637601426
+    second: Player-Ropa_13
+  - first:
+      213: 1240589170589564098
+    second: Player-Ropa_14
+  - first:
+      213: -1422060622398274789
+    second: Player-Ropa_15
+  - first:
+      213: -1127591754084783789
+    second: Player-Ropa_16
+  - first:
+      213: -6603686076814900307
+    second: Player-Ropa_17
+  - first:
+      213: -1494228590187176026
+    second: Player-Ropa_18
+  - first:
+      213: 4586380954607592974
+    second: Player-Ropa_19
+  - first:
+      213: 7438915990628466565
+    second: Player-Ropa_20
+  - first:
+      213: 3281906923566400024
+    second: Player-Ropa_21
+  - first:
+      213: 8778251262885309180
+    second: Player-Ropa_22
+  - first:
+      213: 1487047330658112163
+    second: Player-Ropa_23
+  - first:
+      213: -3712118297787884220
+    second: Player-Ropa_24
+  - first:
+      213: 853993280443872116
+    second: Player-Ropa_25
+  - first:
+      213: 1528312485136891726
+    second: Player-Ropa_26
+  - first:
+      213: 8535350587646626712
+    second: Player-Ropa_27
+  - first:
+      213: -2087942517621806129
+    second: Player-Ropa_28
+  - first:
+      213: 8225653935298338734
+    second: Player-Ropa_29
+  - first:
+      213: 8519137057724940679
+    second: Player-Ropa_30
+  - first:
+      213: -9152230246069554165
+    second: Player-Ropa_31
+  - first:
+      213: -6128757841332004484
+    second: Player-Ropa_32
+  - first:
+      213: 788051682898128742
+    second: Player-Ropa_33
+  - first:
+      213: 2145195062184902810
+    second: Player-Ropa_34
+  - first:
+      213: 8026666467356424012
+    second: Player-Ropa_35
+  - first:
+      213: -4466124677657841918
+    second: Player-Ropa_36
+  - first:
+      213: 8521216838847210708
+    second: Player-Ropa_37
+  - first:
+      213: -2873119960832525813
+    second: Player-Ropa_38
+  - first:
+      213: -5512754569421076040
+    second: Player-Ropa_39
+  - first:
+      213: 4635378076795770142
+    second: Player-Ropa_40
+  - first:
+      213: 7964273968754302210
+    second: Player-Ropa_41
+  - first:
+      213: 5158347122104964544
+    second: Player-Ropa_42
+  - first:
+      213: -235458768687308089
+    second: Player-Ropa_43
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Player-Ropa_0
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 213
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02db2dd6b4653f010800000000000000
+      internalID: 1221414805912599840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-Ropa_1
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 221
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67bd91638a926cdd0800000000000000
+      internalID: -2466237943499859082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-Ropa_2
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 214
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 565f006baa0154160800000000000000
+      internalID: 7009026720456045925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-Ropa_3
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 213
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd8d4a6c2ddf45210800000000000000
+      internalID: 1320959672444049631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-Ropa_4
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 213
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bf14cc9cbdd2f370800000000000000
+      internalID: 8354984060879380401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-Ropa_5
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 222
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3987decb83148250800000000000000
+      internalID: 5945898899227511100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-Ropa_6
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 213
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9bcd93e420ce4ce0800000000000000
+      internalID: -1418985567905002596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-Ropa_7
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 214
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb565ea61f8e9aef0800000000000000
+      internalID: -96289793433573954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-Ropa_8
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 174
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f28cd2402d9415e0800000000000000
+      internalID: -1939752777603579147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-Ropa_9
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 173
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbac3b2509eb5f030800000000000000
+      internalID: 3527935410186734271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-Ropa_10
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 170
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 524a935ae4f0697d0800000000000000
+      internalID: -2912123278594563035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-Ropa_11
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 172
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0f4051e94927d2f0800000000000000
+      internalID: -948243799248711921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-Ropa_12
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 185
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abbf070b1ab3fb960800000000000000
+      internalID: 7619874660170136506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-Ropa_13
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 186
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e61261e96e55e83c0800000000000000
+      internalID: -4355449340637601426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-Ropa_14
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 172
+        width: 21
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ccff291745773110800000000000000
+      internalID: 1240589170589564098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-Ropa_15
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 173
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1341e8f563d34ce0800000000000000
+      internalID: -1422060622398274789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-Ropa_16
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 133
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 359ed1e164df950f0800000000000000
+      internalID: -1127591754084783789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-Ropa_17
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 141
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da3414f308efa54a0800000000000000
+      internalID: -6603686076814900307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-Ropa_18
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 134
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6af19a4930f634be0800000000000000
+      internalID: -1494228590187176026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-Ropa_19
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 133
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e06a004bd2916af30800000000000000
+      internalID: 4586380954607592974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-Ropa_20
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 133
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58ff16f2ea65c3760800000000000000
+      internalID: 7438915990628466565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-Ropa_21
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 142
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 812021d65fcab8d20800000000000000
+      internalID: 3281906923566400024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-Ropa_22
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 133
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfa2761b30d92d970800000000000000
+      internalID: 8778251262885309180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-Ropa_23
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 134
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a2d1142bad03a410800000000000000
+      internalID: 1487047330658112163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-Ropa_24
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 94
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44d10286318eb7cc0800000000000000
+      internalID: -3712118297787884220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-Ropa_25
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 93
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4737d692d5ef9db00800000000000000
+      internalID: 853993280443872116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-Ropa_26
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 93
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4ff06e9b18a53510800000000000000
+      internalID: 1528312485136891726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-Ropa_27
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 94
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89b49122328a37670800000000000000
+      internalID: 8535350587646626712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-Ropa_28
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 95
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcba7b5b7532603e0800000000000000
+      internalID: -2087942517621806129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-Ropa_29
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 92
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eaf50ca3ca4672270800000000000000
+      internalID: 8225653935298338734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-Ropa_30
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 53
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 781cf86840e0a3670800000000000000
+      internalID: 8519137057724940679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-Ropa_31
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 61
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b043070f41fbcf080800000000000000
+      internalID: -9152230246069554165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-Ropa_32
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 54
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c791401073742faa0800000000000000
+      internalID: -6128757841332004484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-Ropa_33
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 53
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66faacf84d8bfea00800000000000000
+      internalID: 788051682898128742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-Ropa_34
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 53
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9004771b8345cd10800000000000000
+      internalID: 2145195062184902810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-Ropa_35
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 62
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c47b15dff92746f60800000000000000
+      internalID: 8026666467356424012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-Ropa_36
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 53
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20f2999a4432502c0800000000000000
+      internalID: -4466124677657841918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-Ropa_37
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 54
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d4a09d4191714670800000000000000
+      internalID: 8521216838847210708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-Ropa_38
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 14
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0a3e793e90a028d0800000000000000
+      internalID: -2873119960832525813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-Ropa_39
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 13
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b9cebb4de2ce73b0800000000000000
+      internalID: -5512754569421076040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-Ropa_40
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 13
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e159b033dcb245040800000000000000
+      internalID: 4635378076795770142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-Ropa_41
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 14
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20d9d716af8c68e60800000000000000
+      internalID: 7964273968754302210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-Ropa_42
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 15
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c59931a061269740800000000000000
+      internalID: 5158347122104964544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-Ropa_43
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 12
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c264255f7b7bbcf0800000000000000
+      internalID: -235458768687308089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Player-Ropa_0: 1221414805912599840
+      Player-Ropa_1: -2466237943499859082
+      Player-Ropa_10: -2912123278594563035
+      Player-Ropa_11: -948243799248711921
+      Player-Ropa_12: 7619874660170136506
+      Player-Ropa_13: -4355449340637601426
+      Player-Ropa_14: 1240589170589564098
+      Player-Ropa_15: -1422060622398274789
+      Player-Ropa_16: -1127591754084783789
+      Player-Ropa_17: -6603686076814900307
+      Player-Ropa_18: -1494228590187176026
+      Player-Ropa_19: 4586380954607592974
+      Player-Ropa_2: 7009026720456045925
+      Player-Ropa_20: 7438915990628466565
+      Player-Ropa_21: 3281906923566400024
+      Player-Ropa_22: 8778251262885309180
+      Player-Ropa_23: 1487047330658112163
+      Player-Ropa_24: -3712118297787884220
+      Player-Ropa_25: 853993280443872116
+      Player-Ropa_26: 1528312485136891726
+      Player-Ropa_27: 8535350587646626712
+      Player-Ropa_28: -2087942517621806129
+      Player-Ropa_29: 8225653935298338734
+      Player-Ropa_3: 1320959672444049631
+      Player-Ropa_30: 8519137057724940679
+      Player-Ropa_31: -9152230246069554165
+      Player-Ropa_32: -6128757841332004484
+      Player-Ropa_33: 788051682898128742
+      Player-Ropa_34: 2145195062184902810
+      Player-Ropa_35: 8026666467356424012
+      Player-Ropa_36: -4466124677657841918
+      Player-Ropa_37: 8521216838847210708
+      Player-Ropa_38: -2873119960832525813
+      Player-Ropa_39: -5512754569421076040
+      Player-Ropa_4: 8354984060879380401
+      Player-Ropa_40: 4635378076795770142
+      Player-Ropa_41: 7964273968754302210
+      Player-Ropa_42: 5158347122104964544
+      Player-Ropa_43: -235458768687308089
+      Player-Ropa_5: 5945898899227511100
+      Player-Ropa_6: -1418985567905002596
+      Player-Ropa_7: -96289793433573954
+      Player-Ropa_8: -1939752777603579147
+      Player-Ropa_9: 3527935410186734271
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

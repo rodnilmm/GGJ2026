@@ -1,0 +1,1170 @@
+fileFormatVersion: 2
+guid: d2147b98ae23ab042b4a3da11439c639
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -90357165007775371
+    second: Player-Cuerpo_0
+  - first:
+      213: -8901354680419599577
+    second: Player-Cuerpo_1
+  - first:
+      213: 7532784120743459778
+    second: Player-Cuerpo_2
+  - first:
+      213: 8484103224769141009
+    second: Player-Cuerpo_3
+  - first:
+      213: -8359879810624878944
+    second: Player-Cuerpo_4
+  - first:
+      213: 4616446356433565851
+    second: Player-Cuerpo_5
+  - first:
+      213: -3607488810229196595
+    second: Player-Cuerpo_6
+  - first:
+      213: 4508142015979704413
+    second: Player-Cuerpo_7
+  - first:
+      213: 4473622566293551003
+    second: Player-Cuerpo_8
+  - first:
+      213: 7324074846543537724
+    second: Player-Cuerpo_9
+  - first:
+      213: -5599978974853169341
+    second: Player-Cuerpo_10
+  - first:
+      213: -4973591635319944322
+    second: Player-Cuerpo_11
+  - first:
+      213: -6232604075680887057
+    second: Player-Cuerpo_12
+  - first:
+      213: 7695146935792312873
+    second: Player-Cuerpo_13
+  - first:
+      213: -1070270249751085162
+    second: Player-Cuerpo_14
+  - first:
+      213: -6253874935779496340
+    second: Player-Cuerpo_15
+  - first:
+      213: 7280846082479188213
+    second: Player-Cuerpo_16
+  - first:
+      213: 458019447154684907
+    second: Player-Cuerpo_17
+  - first:
+      213: -8069310736992746635
+    second: Player-Cuerpo_18
+  - first:
+      213: 825833501197975032
+    second: Player-Cuerpo_19
+  - first:
+      213: -6816314110759384122
+    second: Player-Cuerpo_20
+  - first:
+      213: 8193178058002849118
+    second: Player-Cuerpo_21
+  - first:
+      213: 1426305832738355572
+    second: Player-Cuerpo_22
+  - first:
+      213: 5466990280290868754
+    second: Player-Cuerpo_23
+  - first:
+      213: -3377940100978231873
+    second: Player-Cuerpo_24
+  - first:
+      213: -7198965132498948288
+    second: Player-Cuerpo_25
+  - first:
+      213: -2863515243909451263
+    second: Player-Cuerpo_26
+  - first:
+      213: 599412941858827863
+    second: Player-Cuerpo_27
+  - first:
+      213: -3437967229171248822
+    second: Player-Cuerpo_28
+  - first:
+      213: 8493819506317801914
+    second: Player-Cuerpo_29
+  - first:
+      213: 2573594464077469108
+    second: Player-Cuerpo_30
+  - first:
+      213: -6026317754320484126
+    second: Player-Cuerpo_31
+  - first:
+      213: 6170806926975826673
+    second: Player-Cuerpo_32
+  - first:
+      213: -5620179504096098642
+    second: Player-Cuerpo_33
+  - first:
+      213: 5317145190268295948
+    second: Player-Cuerpo_34
+  - first:
+      213: -3047033169366782891
+    second: Player-Cuerpo_35
+  - first:
+      213: -4317952579687577761
+    second: Player-Cuerpo_36
+  - first:
+      213: -2578949911746139215
+    second: Player-Cuerpo_37
+  - first:
+      213: -8906676517604182449
+    second: Player-Cuerpo_38
+  - first:
+      213: 7039380133064161170
+    second: Player-Cuerpo_39
+  - first:
+      213: -4359311540856219935
+    second: Player-Cuerpo_40
+  - first:
+      213: 7153498020383796020
+    second: Player-Cuerpo_41
+  - first:
+      213: -3802194648304652211
+    second: Player-Cuerpo_42
+  - first:
+      213: -767021910643378867
+    second: Player-Cuerpo_43
+  - first:
+      213: 3246379280754351188
+    second: Player-Cuerpo_44
+  - first:
+      213: 6129168591445157585
+    second: Player-Cuerpo_45
+  - first:
+      213: -5783804313395790200
+    second: Player-Cuerpo_46
+  - first:
+      213: -5989504238014840247
+    second: Player-Cuerpo_47
+  - first:
+      213: -4879066677121937735
+    second: Player-Cuerpo_48
+  - first:
+      213: 8729585209534701997
+    second: Player-Cuerpo_49
+  - first:
+      213: 5382427339856595651
+    second: Player-Cuerpo_50
+  - first:
+      213: 5238595721025125550
+    second: Player-Cuerpo_51
+  - first:
+      213: 71697308288293154
+    second: Player-Cuerpo_52
+  - first:
+      213: -1349252050008031470
+    second: Player-Cuerpo_53
+  - first:
+      213: 4364460017963332672
+    second: Player-Cuerpo_54
+  - first:
+      213: 3645526789975443019
+    second: Player-Cuerpo_55
+  - first:
+      213: -3420831272625807326
+    second: Player-Cuerpo_56
+  - first:
+      213: 6746327317321374169
+    second: Player-Cuerpo_57
+  - first:
+      213: -5920997309732730987
+    second: Player-Cuerpo_58
+  - first:
+      213: 3715346063086875914
+    second: Player-Cuerpo_59
+  - first:
+      213: 5790719398064798794
+    second: Player-Cuerpo_60
+  - first:
+      213: 6042202017678342907
+    second: Player-Cuerpo_61
+  - first:
+      213: -4740535870104294913
+    second: Player-Cuerpo_62
+  - first:
+      213: 6629067669252209939
+    second: Player-Cuerpo_63
+  - first:
+      213: 2515089418761622247
+    second: Player-Cuerpo_64
+  - first:
+      213: -2257827677219036969
+    second: Player-Cuerpo_65
+  - first:
+      213: -1764993201308787993
+    second: Player-Cuerpo_66
+  - first:
+      213: -6720256638158055791
+    second: Player-Cuerpo_67
+  - first:
+      213: 1846371815241456512
+    second: Player-Cuerpo_68
+  - first:
+      213: -1056744674113212161
+    second: Player-Cuerpo_69
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 10
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Player-Cuerpo_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 200
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 579dccc13acfebef0800000000000000
+      internalID: -90357165007775371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-Cuerpo_1
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 200
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72b34dd5419087480800000000000000
+      internalID: -8901354680419599577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-Cuerpo_2
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 200
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cbfd965f33d98860800000000000000
+      internalID: 7532784120743459778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-Cuerpo_3
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 200
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1195c16aee69db570800000000000000
+      internalID: 8484103224769141009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-Cuerpo_4
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 200
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a68eb2da9dbbfb80800000000000000
+      internalID: -8359879810624878944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-Cuerpo_5
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 200
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b987edf8089e01040800000000000000
+      internalID: 4616446356433565851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-Cuerpo_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc897175a00afedc0800000000000000
+      internalID: -3607488810229196595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-Cuerpo_7
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 160
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d50db734743209e30800000000000000
+      internalID: 4508142015979704413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-Cuerpo_8
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 160
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9739139500851e30800000000000000
+      internalID: 4473622566293551003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-Cuerpo_9
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 160
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c36e990b44754a560800000000000000
+      internalID: 7324074846543537724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-Cuerpo_10
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 160
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34f7836dac0e842b0800000000000000
+      internalID: -5599978974853169341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-Cuerpo_11
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 160
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7b86e642c04afab0800000000000000
+      internalID: -4973591635319944322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-Cuerpo_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 120
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fee836b6d975189a0800000000000000
+      internalID: -6232604075680887057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-Cuerpo_13
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 120
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92226521e57aaca60800000000000000
+      internalID: 7695146935792312873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-Cuerpo_14
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 120
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69ffaedd0e2a521f0800000000000000
+      internalID: -1070270249751085162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-Cuerpo_15
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 120
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6ee42f51e5c539a0800000000000000
+      internalID: -6253874935779496340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-Cuerpo_16
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 120
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f8677abfe2ca0560800000000000000
+      internalID: 7280846082479188213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-Cuerpo_17
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 120
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be330efa2463b5600800000000000000
+      internalID: 458019447154684907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-Cuerpo_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 80
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5734d4343ac040090800000000000000
+      internalID: -8069310736992746635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-Cuerpo_19
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 80
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fdb582a133f57b00800000000000000
+      internalID: 825833501197975032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-Cuerpo_20
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 80
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cb44be3e669761a0800000000000000
+      internalID: -6816314110759384122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-Cuerpo_21
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 80
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5dd8c0d80404b170800000000000000
+      internalID: 8193178058002849118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-Cuerpo_22
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 80
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 479ff6519914bc310800000000000000
+      internalID: 1426305832738355572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-Cuerpo_23
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 80
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21e104fc1b6aedb40800000000000000
+      internalID: 5466990280290868754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-Cuerpo_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 40
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb535a010652f11d0800000000000000
+      internalID: -3377940100978231873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-Cuerpo_25
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 40
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04f2afe8a53281c90800000000000000
+      internalID: -7198965132498948288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-Cuerpo_26
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 40
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1027cd5ae00c248d0800000000000000
+      internalID: -2863515243909451263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-Cuerpo_27
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 40
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75e644115ea815800800000000000000
+      internalID: 599412941858827863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-Cuerpo_28
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 40
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4150db2503e940d0800000000000000
+      internalID: -3437967229171248822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-Cuerpo_29
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 40
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab93b5cb6db10e570800000000000000
+      internalID: 8493819506317801914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-Cuerpo_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b5df33978e37b320800000000000000
+      internalID: 2573594464077469108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-Cuerpo_31
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e809166ee73e5ca0800000000000000
+      internalID: -6026317754320484126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-Cuerpo_32
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1faf9eba43c13a550800000000000000
+      internalID: 6170806926975826673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-Cuerpo_33
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea6cb6c948c1102b0800000000000000
+      internalID: -5620179504096098642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-Cuerpo_34
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0b5e1d016b4ac940800000000000000
+      internalID: 5317145190268295948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-Cuerpo_35
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55c6f01f973c6b5d0800000000000000
+      internalID: -3047033169366782891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: ae455b6d603f4df40b20c68d2cc78382
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":40.0,"y":40.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Player-Cuerpo_0: -90357165007775371
+      Player-Cuerpo_1: -8901354680419599577
+      Player-Cuerpo_10: -5599978974853169341
+      Player-Cuerpo_11: -4973591635319944322
+      Player-Cuerpo_12: -6232604075680887057
+      Player-Cuerpo_13: 7695146935792312873
+      Player-Cuerpo_14: -1070270249751085162
+      Player-Cuerpo_15: -6253874935779496340
+      Player-Cuerpo_16: 7280846082479188213
+      Player-Cuerpo_17: 458019447154684907
+      Player-Cuerpo_18: -8069310736992746635
+      Player-Cuerpo_19: 825833501197975032
+      Player-Cuerpo_2: 7532784120743459778
+      Player-Cuerpo_20: -6816314110759384122
+      Player-Cuerpo_21: 8193178058002849118
+      Player-Cuerpo_22: 1426305832738355572
+      Player-Cuerpo_23: 5466990280290868754
+      Player-Cuerpo_24: -3377940100978231873
+      Player-Cuerpo_25: -7198965132498948288
+      Player-Cuerpo_26: -2863515243909451263
+      Player-Cuerpo_27: 599412941858827863
+      Player-Cuerpo_28: -3437967229171248822
+      Player-Cuerpo_29: 8493819506317801914
+      Player-Cuerpo_3: 8484103224769141009
+      Player-Cuerpo_30: 2573594464077469108
+      Player-Cuerpo_31: -6026317754320484126
+      Player-Cuerpo_32: 6170806926975826673
+      Player-Cuerpo_33: -5620179504096098642
+      Player-Cuerpo_34: 5317145190268295948
+      Player-Cuerpo_35: -3047033169366782891
+      Player-Cuerpo_4: -8359879810624878944
+      Player-Cuerpo_5: 4616446356433565851
+      Player-Cuerpo_6: -3607488810229196595
+      Player-Cuerpo_7: 4508142015979704413
+      Player-Cuerpo_8: 4473622566293551003
+      Player-Cuerpo_9: 7324074846543537724
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
