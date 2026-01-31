@@ -21,8 +21,15 @@ public class MovementController2D : MonoBehaviour
     // These methods must be public and match the Input Actions' callback names exactly
     public void OnMove(InputAction.CallbackContext context)
     {
-        moveInput = context.ReadValue<Vector2>();
-        //Debug.Log($"{gameObject.name} move input: {moveInput}");
+        Vector2 input = context.ReadValue<Vector2>();
+        moveInput = input;
+
+        // Only update facing direction if there is input
+        if (input.sqrMagnitude > 0.01f)
+        {
+            faceX = input.x;
+            faceY = input.y;
+        }
     }
 
     public void OnInteract(InputAction.CallbackContext context)
@@ -34,21 +41,14 @@ public class MovementController2D : MonoBehaviour
     {
         Vector2 move = moveInput * moveSpeed * Time.fixedDeltaTime;
         rb.MovePosition(rb.position + move);
-        //Debug.Log($"Moving {gameObject.name} to {rb.position}");
-        faceX = moveInput.x;
-        faceY = moveInput.y;
+
+        // Always set animator parameters to last facing direction
         for (int i = 0; i < anim.Length; i++)
         {
             anim[i].SetFloat("x", faceX);
-        }
-        for (int i = 0; i < anim.Length; i++)
-        {
             anim[i].SetFloat("y", faceY);
         }
     }
-
-    //rotar en x y y 
-
 
     // Add this method to enable or switch on the camera for this player
     public void SwitchOnCamera()
