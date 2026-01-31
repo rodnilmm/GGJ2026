@@ -72,5 +72,6 @@ public class MovementController2D : MonoBehaviour
         yield return new WaitForSeconds(duration);
         moveSpeed = originalSpeed;
         Debug.Log($"Player speed reverted to {originalSpeed}");
+        //SpeedUp.EndBuff();
     }
 }
