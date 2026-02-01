@@ -98,7 +98,7 @@ public class MovementController2D : MonoBehaviour
         if (shield != null && shield.IsActive)
         {
             // Let the shield consume one durability and provide feedback
-            shield.OnBlockedAnubisHit();
+            shield.OnBlockedMaskHit();
             return;
         }
 
