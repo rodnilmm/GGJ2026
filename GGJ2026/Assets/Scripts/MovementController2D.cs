@@ -1,6 +1,6 @@
 using UnityEngine;
-using UnityEngine.InputSystem;
 using System.Collections;
+using UnityEngine.InputSystem;
 
 public class MovementController2D : MonoBehaviour
 {
@@ -93,6 +93,15 @@ public class MovementController2D : MonoBehaviour
     // Immobilize API: external scripts call this to stop the player for a duration
     public void ApplyImmobilize(float duration)
     {
+        // If the player currently has an active shield, ignore immobilize attempts.
+        var shield = GetComponentInChildren<ShieldMask>();
+        if (shield != null && shield.IsActive)
+        {
+            // Let the shield consume one durability and provide feedback
+            shield.OnBlockedAnubisHit();
+            return;
+        }
+
         StartCoroutine(ImmobilizeCoroutine(duration));
     }
 
