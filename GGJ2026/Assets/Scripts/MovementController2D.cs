@@ -89,4 +89,28 @@ public class MovementController2D : MonoBehaviour
             speedUp.EndBuff();
         }
     }
+
+    // Immobilize API: external scripts call this to stop the player for a duration
+    public void ApplyImmobilize(float duration)
+    {
+        StartCoroutine(ImmobilizeCoroutine(duration));
+    }
+
+    private IEnumerator ImmobilizeCoroutine(float duration)
+    {
+        float originalSpeed = moveSpeed;
+        // stop movement
+        moveSpeed = 0f;
+
+        // update animators to not walking
+        for (int i = 0; i < anim.Length; i++)
+        {
+            anim[i].SetBool("Walking", false);
+        }
+
+        yield return new WaitForSeconds(duration);
+
+        // restore previous speed
+        moveSpeed = originalSpeed;
+    }
 }
