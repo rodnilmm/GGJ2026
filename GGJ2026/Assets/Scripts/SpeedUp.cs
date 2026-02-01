@@ -32,10 +32,10 @@ public class SpeedUp : MonoBehaviour
                 playerController.ApplySpeedBuff(speedBuff, buffDuration);
                 // Attach to player and start hovering
                 targetPlayer = collision.transform;
+                transform.SetParent(targetPlayer); // Make this object a child of the player
                 timer = 0f;
                 // Disable collider so it can't be picked up again
                 GetComponent<Collider2D>().enabled = false;
-                // Optionally, disable sprite renderer on player to avoid confusion
             }
         }
     }

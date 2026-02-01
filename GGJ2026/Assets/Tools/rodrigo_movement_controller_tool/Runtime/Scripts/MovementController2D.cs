@@ -78,11 +78,15 @@ public class MovementController2D : MonoBehaviour
 
     private IEnumerator SpeedBuffCoroutine(float newSpeed, float duration)
     {
-        float originalSpeed = moveSpeed;
-        moveSpeed = newSpeed;
-        yield return new WaitForSeconds(duration);
-        moveSpeed = originalSpeed;
-        Debug.Log($"Player speed reverted to {originalSpeed}");
-        //SpeedUp.EndBuff();
+        var speedUp = GetComponentInChildren<SpeedUp>();
+        if (speedUp != null)
+        {
+            float originalSpeed = moveSpeed;
+            moveSpeed = newSpeed;
+            yield return new WaitForSeconds(duration);
+            moveSpeed = originalSpeed;
+            Debug.Log($"Player speed reverted to {originalSpeed}");
+            speedUp.EndBuff();
+        }
     }
 }
