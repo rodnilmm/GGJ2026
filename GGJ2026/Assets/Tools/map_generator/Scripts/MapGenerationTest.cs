@@ -17,12 +17,12 @@ public class MapGenerationTest : MonoBehaviour
     {
         if (orchestrator == null)
         {
-            orchestrator = FindObjectOfType<MapGenerationOrchestrator>();
+            orchestrator = FindFirstObjectByType<MapGenerationOrchestrator>();
         }
 
         if (tilemap == null)
         {
-            tilemap = FindObjectOfType<Tilemap>();
+            tilemap = FindFirstObjectByType<Tilemap>();
         }
     }
 

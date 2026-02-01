@@ -5,8 +5,8 @@ using UnityEngine.Tilemaps;
 public class TilemapManhattanGenerator : MonoBehaviour
 {
     [SerializeField] private Tilemap tilemap;
-    public GameObject[] prefabs; 
-    public Transform fixedObject;
+    public GameObject[] masks; 
+    public Transform player1InitPosition, player2InitPosition, player3InitPosition, player4InitPosition;
     public int minManhattanDistance = 4; // Distance in "steps"
 
     [Header("Execution")]
@@ -22,7 +22,7 @@ public class TilemapManhattanGenerator : MonoBehaviour
             tilemap = GetComponent<Tilemap>();
             if (tilemap == null)
             {
-                tilemap = FindObjectOfType<Tilemap>();
+                tilemap = FindFirstObjectByType<Tilemap>();
             }
             if (tilemap == null)
             {
@@ -40,7 +40,7 @@ public class TilemapManhattanGenerator : MonoBehaviour
     }
 
     /// <summary>
-    /// Generates placement of prefabs on existing tiles using Manhattan distance.
+    /// Generates placement of masks on existing tiles using Manhattan distance.
     /// Should be called after BiomeGenerator.GenerateMap() to ensure tiles are populated.
     /// </summary>
     public void GenerateOnTilemap()
@@ -51,16 +51,22 @@ public class TilemapManhattanGenerator : MonoBehaviour
             return;
         }
 
-        if (fixedObject == null)
+        if ( player1InitPosition == null || player2InitPosition == null)
         {
-            Debug.LogWarning("TilemapManhattanGenerator: fixedObject not assigned. Placement may be unexpected.");
+            Debug.LogWarning("TilemapManhattanGenerator: playerInitPosition not assigned. Placement may be unexpected.");
         }
 
         // Clear occupied cells for fresh generation
         occupiedCells.Clear();
 
-        // 1. Convert fixed object position to Cell Space
-        Vector3Int fixedCell = tilemap.WorldToCell(fixedObject.position);
+        // 1. Convert player 1 starting position to Cell Space
+        Vector3Int fixedCell = tilemap.WorldToCell(player1InitPosition.position);
+        occupiedCells.Add(fixedCell);
+        fixedCell = tilemap.WorldToCell(player2InitPosition.position);
+        occupiedCells.Add(fixedCell);
+        fixedCell = tilemap.WorldToCell(player3InitPosition.position);
+        occupiedCells.Add(fixedCell);
+        fixedCell = tilemap.WorldToCell(player3InitPosition.position);
         occupiedCells.Add(fixedCell);
 
         // 2. Gather all valid tiles
@@ -88,12 +94,12 @@ public class TilemapManhattanGenerator : MonoBehaviour
         int placedCount = 0;
         foreach (Vector3Int candidateCell in availableCells)
         {
-            if (placedCount >= prefabs.Length) break;
+            if (placedCount >= masks.Length) break;
 
             if (IsValidManhattan(candidateCell))
             {
                 Vector3 spawnPos = tilemap.GetCellCenterWorld(candidateCell);
-                Instantiate(prefabs[placedCount], spawnPos, Quaternion.identity);
+                Instantiate(masks[placedCount], spawnPos, Quaternion.identity);
                 
                 occupiedCells.Add(candidateCell);
                 placedCount++;

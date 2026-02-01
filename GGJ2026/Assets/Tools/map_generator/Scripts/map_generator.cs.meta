@@ -1,2 +1,19 @@
 fileFormatVersion: 2
 guid: 5b26c75a265350d4595b4e7c702d7212
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - tilemap: {instanceID: 0}
+  - rockTile: {fileID: 11400000, guid: 81cbb59c980bc3d499bf721aa4f629e9, type: 2}
+  - rockTilebroken: {fileID: 11400000, guid: b8e9c86242c2ea940ba65f6f86b82f90, type: 2}
+  - rockTileCrab: {fileID: 11400000, guid: c29c66617e9a70f49a7ba442c21a2d7f, type: 2}
+  - rockTileOnk: {fileID: 11400000, guid: 7fe32957d1e382a4f8247051220bda71, type: 2}
+  - rockTileEye: {fileID: 11400000, guid: 582eecc79e07288429a78faeaf55aa98, type: 2}
+  - sandTile: {fileID: 11400000, guid: d3e3caf6adc981644b3735aa99118ac7, type: 2}
+  - sandTile2: {fileID: 11400000, guid: e3deab550a327804c81b99989782a8cd, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

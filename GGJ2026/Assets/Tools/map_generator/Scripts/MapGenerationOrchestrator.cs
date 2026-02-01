@@ -3,7 +3,7 @@ using UnityEngine;
 /// <summary>
 /// Orchestrates sequential execution of map generation:
 /// 1. BiomeGenerator.GenerateMap() - generates base tiles using Perlin noise
-/// 2. TilemapManhattanGenerator.GenerateOnTilemap() - places prefabs with Manhattan distance constraints
+/// 2. TilemapManhattanGenerator.GenerateOnTilemap() - places masks with Manhattan distance constraints
 /// 
 /// Both generators must reference the same Tilemap component.
 /// Disable autoGenerateOnStart on both BiomeGenerator and TilemapManhattanGenerator to allow this orchestrator control.
@@ -21,12 +21,12 @@ public class MapGenerationOrchestrator : MonoBehaviour
         // Auto-find generators if not assigned
         if (biomeGenerator == null)
         {
-            biomeGenerator = FindObjectOfType<BiomeGenerator>();
+            biomeGenerator = FindFirstObjectByType<BiomeGenerator>();
         }
 
         if (manhattanGenerator == null)
         {
-            manhattanGenerator = FindObjectOfType<TilemapManhattanGenerator>();
+            manhattanGenerator = FindFirstObjectByType<TilemapManhattanGenerator>();
         }
 
         if (biomeGenerator == null)
@@ -65,7 +65,7 @@ public class MapGenerationOrchestrator : MonoBehaviour
         Debug.Log("MapGenerationOrchestrator: Running BiomeGenerator.GenerateMap()");
         biomeGenerator.GenerateMap();
 
-        // Step 2: Place prefabs on generated tiles
+        // Step 2: Place masks on generated tiles
         Debug.Log("MapGenerationOrchestrator: Running TilemapManhattanGenerator.GenerateOnTilemap()");
         manhattanGenerator.GenerateOnTilemap();
 
@@ -90,7 +90,7 @@ public class MapGenerationOrchestrator : MonoBehaviour
 
     /// <summary>
     /// Re-runs only the Manhattan distance placement.
-    /// Useful for re-placing prefabs with different constraints without regenerating tiles.
+    /// Useful for re-placing masks with different constraints without regenerating tiles.
     /// </summary>
     public void RegeneratePlacement()
     {
