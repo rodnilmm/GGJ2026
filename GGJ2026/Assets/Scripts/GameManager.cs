@@ -6,7 +6,7 @@ using TMPro;
 public class GameManager : MonoBehaviour
 {
     [Tooltip("If set, the scene with this name will be loaded when a player picks up the mask. Leave empty to freeze the game instead.")]
-    public string winSceneName = "EndingScene";
+    public string winSceneName = "MainMenu";
 
     [Tooltip("When loading a win scene, wait this many realtime seconds before switching.")]
     public float sceneLoadDelay = 0.5f;
