@@ -181,7 +181,7 @@ public class BiomeGenerator : MonoBehaviour {
     /// </summary>
     private bool IsPlayerPosition(Vector3 cellWorldPos)
     {
-        float checkRadius = cellSize * 0.6f;
+        float checkRadius = cellSize * 1f;
         return Vector3.Distance(new Vector3(cellWorldPos.x, cellWorldPos.y, 0), player1InitPosition.position) < checkRadius ||
                Vector3.Distance(new Vector3(cellWorldPos.x, cellWorldPos.y, 0), player2InitPosition.position) < checkRadius ||
                Vector3.Distance(new Vector3(cellWorldPos.x, cellWorldPos.y, 0), player3InitPosition.position) < checkRadius ||
