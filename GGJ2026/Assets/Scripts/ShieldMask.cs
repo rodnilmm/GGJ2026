@@ -37,7 +37,7 @@ public class ShieldMask : MonoBehaviour
     public bool IsActive => isActive && enabled && gameObject.activeInHierarchy;
 
     // Called by MovementController2D when an immobilize attempt was blocked
-    public void OnBlockedAnubisHit()
+    public void OnBlockedMaskHit()
     {
         if (blockSound != null)
         {
@@ -91,20 +91,35 @@ public class ShieldMask : MonoBehaviour
                 isActive = true;
                 StartCoroutine(BuffLifetime());
 
-                // NOTE: keep collider enabled so shield can neutralize Anubis masks while hovering
+                // NOTE: keep collider enabled so shield can neutralize masks while hovering
                 return;
             }
         }
 
         // If the thing that collided is an AnubisMask (or a child of it), neutralize that mask
         var anubis = collision.GetComponentInParent<AnubisMask>();
-        if (anubis != null)
-        {
-            // Destroy or end the Anubis mask buff so it can't immobilize
-            anubis.EndBuff();
+        // If the thing that collided is a SobekMask (or a child of it), neutralize that mask too
+        var sobek = collision.GetComponentInParent<SobekMask>();
 
-            // Provide feedback and reduce durability
-            OnBlockedAnubisHit();
+        var speed = collision.GetComponentInParent<SpeedUp>();
+
+        if (anubis != null || sobek != null || speed!= null)
+        {
+            if (anubis != null)
+            {
+                anubis.EndBuff();
+            }
+            if (sobek != null)
+            {
+                sobek.EndBuff();
+            }
+            if (speed != null)
+            {
+                speed.EndBuff();
+            }
+
+            // Provide feedback and reduce durability (shared behavior)
+            OnBlockedMaskHit();
         }
     }
 

@@ -46,6 +46,12 @@ public class BreakableObject : MonoBehaviour
         }
     }
 
+    // Forcefully break the object immediately (ignores remainingHits)
+    public void ForceBreak()
+    {
+        Break();
+    }
+
     private void Break()
     {
         // Play break sound
