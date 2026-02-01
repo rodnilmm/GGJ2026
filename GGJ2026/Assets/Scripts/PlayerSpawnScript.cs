@@ -22,7 +22,12 @@ public class PlayerSpawnScript : MonoBehaviour
 
     public void OnPlayerJoined(PlayerInput playerInput)
     {
+        // Place the player at the next spawn point (keep existing behavior)
         playerInput.transform.position = SpawnPoints[m_playerCount].transform.position;
+
+        // Give the spawned player a distinct name (Player 1, Player 2, ...)
+        // Use m_playerCount to guarantee uniqueness for this spawn sequence.
+        playerInput.gameObject.name = $"Player {m_playerCount + 1}";
 
         // Find the child GameObject by name and change its SpriteRenderer color
         Transform colorChild = playerInput.transform.Find(colorChildName);
