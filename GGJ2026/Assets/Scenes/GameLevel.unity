@@ -15689,6 +15689,27 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &1946283913 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 985523021106126097, guid: 80afaddf1e823ba4a80fbfe0c9affe18, type: 3}
+  m_PrefabInstance: {fileID: 2633270120322793707}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1946283917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1946283913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b57df15049539284ebecb2611e8a1569, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BreakableObject
+  brokenPrefab: {fileID: 0}
+  breakSound: {fileID: 0}
+  breakSoundVolume: 1
+  hitsToBreak: 3
 --- !u!1 &702674112559832773
 GameObject:
   m_ObjectHideFlags: 0
@@ -15763,7 +15784,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 985523021106126097, guid: 80afaddf1e823ba4a80fbfe0c9affe18, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1946283917}
   m_SourcePrefab: {fileID: 100100000, guid: 80afaddf1e823ba4a80fbfe0c9affe18, type: 3}
 --- !u!58 &4678875347163919534
 CircleCollider2D:
