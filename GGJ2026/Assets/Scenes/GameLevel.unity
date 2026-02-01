@@ -133,7 +133,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6583935094148557436, guid: 76c1a97f9157c124fae3909744d9c587, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8784619861375377959, guid: 76c1a97f9157c124fae3909744d9c587, type: 3}
       propertyPath: m_LocalPosition.x
@@ -40549,6 +40549,7 @@ MonoBehaviour:
   - {fileID: 2792523123787988423, guid: 94310455d00438545821f2bcdb857582, type: 3}
   - {fileID: 4947254384768142539, guid: 33a2e137c2f494b4598f8b936d4462e0, type: 3}
   - {fileID: 4274075331742721024, guid: 6af8bd156dde4904fa459f32ccd1e5d1, type: 3}
+  maskCount: 7
   player1InitPosition: {fileID: 2139374096}
   player2InitPosition: {fileID: 19169381}
   player3InitPosition: {fileID: 8532882732596547412}
@@ -41584,6 +41585,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3350066000082908145, guid: 6c5194ae1970ed349aaeafe7a99bee66, type: 3}
+      propertyPath: m_Volume
+      value: 0.7
+      objectReference: {fileID: 0}
     - target: {fileID: 3358681608105407364, guid: 6c5194ae1970ed349aaeafe7a99bee66, type: 3}
       propertyPath: m_Name
       value: TutMask

@@ -142,6 +142,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ThotMask
   buffDuration: 5
-  slowMultiplier: 0.255
+  slowMultiplier: 0.5
   hoverRadius: 1
   hoverSpeed: 0.5

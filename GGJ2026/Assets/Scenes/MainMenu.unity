@@ -1159,7 +1159,7 @@ PrefabInstance:
     - target: {fileID: 7341963678683996979, guid: 10d01240acfa80a43a4156c2c78c1063, type: 3}
       propertyPath: m_text
       value: "Coding - Rodrigo L\xF3pez Moreira, Andr\xE9s Heduvan\nArt - Montes45\nDesign
-        - Andr\xE9s Heduvan, Rodrigo L\xF3pez Moreira\nMusic - Leonel"
+        - Andr\xE9s Heduvan, Rodrigo L\xF3pez Moreira\nMusic - leoVHS"
       objectReference: {fileID: 0}
     - target: {fileID: 7341963678683996979, guid: 10d01240acfa80a43a4156c2c78c1063, type: 3}
       propertyPath: m_fontSize
