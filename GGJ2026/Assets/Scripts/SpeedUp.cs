@@ -29,13 +29,16 @@ public class SpeedUp : MonoBehaviour
             var playerController = collision.GetComponent<MovementController2D>();
             if (playerController != null)
             {
-                playerController.ApplySpeedBuff(speedBuff, buffDuration);
-                // Attach to player and start hovering
+                // Attach to player and start hovering BEFORE calling ApplySpeedBuff
                 targetPlayer = collision.transform;
                 transform.SetParent(targetPlayer); // Make this object a child of the player
                 timer = 0f;
                 // Disable collider so it can't be picked up again
-                GetComponent<Collider2D>().enabled = false;
+                var col = GetComponent<Collider2D>();
+                if (col != null) col.enabled = false;
+
+                // Now call ApplySpeedBuff — MovementController2D can find this child
+                playerController.ApplySpeedBuff(speedBuff, buffDuration);
             }
         }
     }
