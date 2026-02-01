@@ -128,7 +128,7 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 0.5
+  m_Radius: 0.2
 --- !u!114 &7260109935297448649
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -146,5 +146,4 @@ MonoBehaviour:
   hoverSpeed: 1
   immobilizeDuration: 10
   hitCooldown: 10
-  pickupSound: {fileID: 0}
-  mainLoop: {fileID: 0}
+  fadeDuration: 2

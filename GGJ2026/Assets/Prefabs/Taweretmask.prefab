@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1256378979622070562}
   - component: {fileID: 1336880814033676371}
   m_Layer: 0
-  m_Name: TaweretMask
+  m_Name: Taweretmask
   m_TagString: Finish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -128,7 +128,7 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 0.5
+  m_Radius: 0.2
 --- !u!114 &1336880814033676371
 MonoBehaviour:
   m_ObjectHideFlags: 0
