@@ -25,6 +25,9 @@ public class HorusMask : MonoBehaviour
     [Tooltip("How fast the virtual camera lens transitions to/from the zoom.")]
     public float cameraZoomLerpSpeed = 6f;
 
+    [Tooltip("Name of the child GameObject to enable while the buff is active.")]
+    private string childObjectName = "HorusEye";
+
     // Hover / pickup state
     private Transform targetPlayer;
     private float timer;
@@ -47,6 +50,7 @@ public class HorusMask : MonoBehaviour
 
     // Track sprite renderers we've modified and their original colors so we can restore them
     private readonly Dictionary<SpriteRenderer, Color> modifiedRenderers = new Dictionary<SpriteRenderer, Color>();
+    private GameObject buffChildObject;
 
     private void Update()
     {
@@ -195,12 +199,17 @@ public class HorusMask : MonoBehaviour
                 transform.SetParent(targetPlayer);
                 timer = 0f;
 
+                // Find and enable the child object
+                if (!string.IsNullOrEmpty(childObjectName))
+                {
+                    buffChildObject = targetPlayer.Find(childObjectName)?.gameObject;
+                    if (buffChildObject != null)
+                        buffChildObject.SetActive(true);
+                }
+
                 isActive = true;
                 StartCoroutine(BuffLifetime());
-
                 AcquireVirtualCameraOnly();
-
-                // Keep collider enabled so the mask can affect blocks while hovering
                 return;
             }
         }
@@ -372,6 +381,10 @@ public class HorusMask : MonoBehaviour
 
     public void EndBuff()
     {
+        // Disable the child object when buff ends
+        if (buffChildObject != null)
+            buffChildObject.SetActive(false);
+
         Destroy(gameObject);
     }
 

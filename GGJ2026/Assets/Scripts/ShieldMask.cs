@@ -21,7 +21,8 @@ public class ShieldMask : MonoBehaviour
 
     // Remaining durability
     private int remainingDurability;
-
+    private string childObjectName = "Bubble";
+    private GameObject buffChildObject;
     // Hover / pickup state
     private Transform targetPlayer;
     private float timer;
@@ -86,6 +87,13 @@ public class ShieldMask : MonoBehaviour
                 targetPlayer = collision.transform;
                 transform.SetParent(targetPlayer); // Make this object a child of the player
                 timer = 0f;
+
+                if (!string.IsNullOrEmpty(childObjectName))
+                {
+                    buffChildObject = targetPlayer.Find(childObjectName)?.gameObject;
+                    if (buffChildObject != null)
+                        buffChildObject.SetActive(true);
+                }
 
                 // mark active and start lifetime coroutine
                 isActive = true;
