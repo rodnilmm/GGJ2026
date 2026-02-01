@@ -194,7 +194,7 @@ public class BiomeGenerator : MonoBehaviour {
     /// </summary>
     private bool IsObjectivePosition(Vector3 cellWorldPos)
     {
-        float checkRadius = cellSize * 0.8f;
+        float checkRadius = cellSize * 1f;
         return Vector3.Distance(new Vector3(cellWorldPos.x, cellWorldPos.y, 0), objectivePosition.position) < checkRadius;
 
     }
