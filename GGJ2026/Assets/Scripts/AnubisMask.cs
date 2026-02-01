@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class AnubisMask : MonoBehaviour
 {
@@ -18,6 +19,7 @@ public class AnubisMask : MonoBehaviour
     private readonly HashSet<MovementController2D> recentlyImmobilized = new HashSet<MovementController2D>();
     private AudioSource pickupSound;
     private AudioSource mainLoop;
+    public float fadeDuration = 2f;
 
     private void Awake()
     {
@@ -68,11 +70,13 @@ public class AnubisMask : MonoBehaviour
                 isActive = true;
                 if (pickupSound != null)
                 {
-                    pickupSound.volume = 1f;
+                    StartCoroutine(FadeInAnubis());
+                    //pickupSound.volume = 1f;
                 }
                 if (mainLoop != null)
                 {
-                    mainLoop.volume = 0f;
+                    StartCoroutine(FadeOutMainLoop());
+                    //mainLoop.volume = 0f;
                 }
                 StartCoroutine(BuffLifetime());
 
@@ -115,13 +119,61 @@ public class AnubisMask : MonoBehaviour
     {
         if (pickupSound != null)
         {
-            pickupSound.volume = 0f;
+            StartCoroutine(FadeOutAnubis());
         }
         if (mainLoop != null)
         {
-            mainLoop.volume = 1f;
+            StartCoroutine(FadeInMainLoop());
         }
         // optionally play VFX or detach before destroy
         Destroy(gameObject);
+    }
+    IEnumerator FadeInAnubis()
+    {
+        float targetVolume = 1f;
+
+        while (pickupSound.volume < targetVolume)
+        {
+            pickupSound.volume += Time.deltaTime / fadeDuration;
+            yield return null;
+        }
+
+        pickupSound.volume = targetVolume;
+    }
+    IEnumerator FadeInMainLoop()
+    {
+        float targetVolume = 1f;
+
+        while (mainLoop.volume < targetVolume)
+        {
+            mainLoop.volume += Time.deltaTime / fadeDuration;
+            yield return null;
+        }
+
+        mainLoop.volume = targetVolume;
+    }
+    IEnumerator FadeOutMainLoop()
+    {
+        float targetVolume = 0f;
+
+        while (mainLoop.volume > targetVolume)
+        {
+            mainLoop.volume -= Time.deltaTime / fadeDuration;
+            yield return null;
+        }
+
+        mainLoop.volume = targetVolume;
+    }
+    IEnumerator FadeOutAnubis()
+    {
+        float targetVolume = 0f;
+
+        while (pickupSound.volume > targetVolume)
+        {
+            pickupSound.volume -= Time.deltaTime / fadeDuration;
+            yield return null;
+        }
+
+        pickupSound.volume = targetVolume;
     }
 }

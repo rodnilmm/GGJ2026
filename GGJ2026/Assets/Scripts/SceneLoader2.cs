@@ -44,6 +44,7 @@ public class SceneLoader2 : MonoBehaviour
         if (keyboardPressed || mousePressed || gamepadPressed)
         {
             inputDetected = true;
+            beastSFX.Play();
             StartCoroutine(LoadNextSceneAfterDelay());
         }
     }
@@ -51,10 +52,6 @@ public class SceneLoader2 : MonoBehaviour
     private IEnumerator SceneStartSequence()
     {
         yield return new WaitForSeconds(0.5f); // Wait for crossfade (adjust as needed)
-        if (beastSFX != null)
-        {
-            beastSFX.Play();
-        }
         // Wait for input before loading next scene
     }
 

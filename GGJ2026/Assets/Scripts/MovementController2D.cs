@@ -15,6 +15,7 @@ public class MovementController2D : MonoBehaviour
     private Rigidbody2D rb;
     public AnimationClip picoAnim;
     [SerializeField] private Camera playerCamera;
+    [SerializeField] private AudioSource picoSound;
 
     private void Awake()
     {
@@ -63,6 +64,7 @@ public class MovementController2D : MonoBehaviour
             anim[i].SetBool("Walking", false);
         }
         yield return new WaitForSeconds(picoAnim.length);
+        picoSound.Play();
         for (int i = 0; i < anim.Length; i++)
         {
             anim[i].SetBool("Pico", false);

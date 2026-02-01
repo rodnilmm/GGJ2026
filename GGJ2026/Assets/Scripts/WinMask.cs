@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 public class WinMask : MonoBehaviour
 {
     private bool pickedUp;
+    [SerializeField] private AudioSource stingerEnd;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -14,6 +15,7 @@ public class WinMask : MonoBehaviour
         {
             var player = collision.gameObject;
             pickedUp = true;
+            stingerEnd.Play();
 
             // Attach mask to the player so it hovers/visually follows them (optional)
             transform.SetParent(player.transform);
