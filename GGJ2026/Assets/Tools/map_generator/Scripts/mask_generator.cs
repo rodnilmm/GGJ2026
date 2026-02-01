@@ -6,9 +6,10 @@ public class TilemapManhattanGenerator : MonoBehaviour
 {
     [SerializeField] private Tilemap tilemap;
     public GameObject[] masks; 
+    public int maskCount = 7; // Number of mask copies to generate
     public Transform player1InitPosition, player2InitPosition, player3InitPosition, player4InitPosition;
     public int minManhattanDistance = 4; // Distance in "steps"
-    public float zOffset = 0f; // Z position for spawned masks
+    public float zOffset = 3.0f; // Z position for spawned masks
 
     [Header("Execution")]
     [SerializeField] private bool autoGenerateOnStart = false; // Set to false to allow orchestrator control
@@ -93,15 +94,16 @@ public class TilemapManhattanGenerator : MonoBehaviour
 
         // 4. Placement Loop
         int placedCount = 0;
+        int totalMasksToGenerate = maskCount * masks.Length; // Generate maskCount copies of each mask
         foreach (Vector3Int candidateCell in availableCells)
         {
-            if (placedCount >= masks.Length) break;
+            if (placedCount >= totalMasksToGenerate) break;
 
             if (IsValidManhattan(candidateCell))
             {
                 Vector3 spawnPos = tilemap.GetCellCenterWorld(candidateCell);
                 spawnPos.z = zOffset;
-                Instantiate(masks[placedCount], spawnPos, Quaternion.identity, tilemap.transform.parent);
+                Instantiate(masks[placedCount % masks.Length], spawnPos, Quaternion.identity, tilemap.transform.parent);
                 
                 occupiedCells.Add(candidateCell);
                 placedCount++;
