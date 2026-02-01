@@ -59,6 +59,8 @@ public class ShieldMask : MonoBehaviour
     private void DestroyShield()
     {
         // Optionally play VFX here
+        if (buffChildObject != null)
+            buffChildObject.SetActive(false);
         Destroy(gameObject);
     }
 
