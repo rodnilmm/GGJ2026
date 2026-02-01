@@ -1,5 +1,5 @@
-using UnityEngine;
 using System.Collections;
+using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class MovementController2D : MonoBehaviour
@@ -71,6 +71,7 @@ public class MovementController2D : MonoBehaviour
         // Optionally, add logic to enable a specific camera or handle split-screen, etc.
     }
 
+    // Public API used by pickups to set a temporary moveSpeed
     public void ApplySpeedBuff(float newSpeed, float duration)
     {
         StartCoroutine(SpeedBuffCoroutine(newSpeed, duration));
@@ -78,14 +79,29 @@ public class MovementController2D : MonoBehaviour
 
     private IEnumerator SpeedBuffCoroutine(float newSpeed, float duration)
     {
+        // Always apply the temporary speed change regardless of pickup child presence.
+        float originalSpeed = moveSpeed;
+        moveSpeed = newSpeed;
+
+        // Ensure animator state reflects the slowed movement (optional)
+        if (moveInput.sqrMagnitude <= 0.01f)
+        {
+            for (int i = 0; i < anim.Length; i++)
+            {
+                anim[i].SetBool("Walking", false);
+            }
+        }
+
+        yield return new WaitForSeconds(duration);
+
+        // restore previous speed
+        moveSpeed = originalSpeed;
+        Debug.Log($"Player speed reverted to {originalSpeed}");
+
+        // If the buff was created by a pickup existing as a child, let that pickup end itself.
         var speedUp = GetComponentInChildren<SpeedUp>();
         if (speedUp != null)
         {
-            float originalSpeed = moveSpeed;
-            moveSpeed = newSpeed;
-            yield return new WaitForSeconds(duration);
-            moveSpeed = originalSpeed;
-            Debug.Log($"Player speed reverted to {originalSpeed}");
             speedUp.EndBuff();
         }
     }
