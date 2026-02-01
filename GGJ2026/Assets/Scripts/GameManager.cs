@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
     public string winSceneName = "MainMenu";
 
     [Tooltip("When loading a win scene, wait this many realtime seconds before switching.")]
-    public float sceneLoadDelay = 0.5f;
+    public float sceneLoadDelay = 7f;
     [SerializeField] TextMeshProUGUI winText;
     [SerializeField] Canvas winCanvas;
     public void HandleWin(GameObject winner)
