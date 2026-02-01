@@ -26,7 +26,7 @@ public class BreakableObject : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         // Example condition: break on collision with an object tagged "Player"
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("PickAxe"))
         {
             TakeHit();
         }

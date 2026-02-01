@@ -154,4 +154,4 @@ MonoBehaviour:
   brokenPrefab: {fileID: 0}
   breakSound: {fileID: 0}
   breakSoundVolume: 1
-  hitsToBreak: 3
+  hitsToBreak: 6

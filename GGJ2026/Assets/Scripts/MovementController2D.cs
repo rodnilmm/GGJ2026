@@ -5,12 +5,15 @@ using UnityEngine.InputSystem;
 public class MovementController2D : MonoBehaviour
 {
     [Header("Movement Settings")]
+    public bool isMummy = false;
+    public bool Mining = false;
     public float moveSpeed = 5f;
     public float faceX;
     public float faceY;
     public Animator[] anim;
     private Vector2 moveInput;
     private Rigidbody2D rb;
+    public AnimationClip picoAnim;
     [SerializeField] private Camera playerCamera;
 
     private void Awake()
@@ -45,12 +48,33 @@ public class MovementController2D : MonoBehaviour
 
     public void OnInteract(InputAction.CallbackContext context)
     {
+        if (Mining) return;
+        Mining = true;
         Debug.Log($"{gameObject.name} interacted!");
+        isMummy = true;
+        StartCoroutine(InteractAnim());
+    }
+
+    IEnumerator InteractAnim()
+    {
+        for (int i = 0; i < anim.Length; i++)
+        {
+            anim[i].SetBool("Pico", true);
+            anim[i].SetBool("Walking", false);
+        }
+        yield return new WaitForSeconds(picoAnim.length);
+        for (int i = 0; i < anim.Length; i++)
+        {
+            anim[i].SetBool("Pico", false);
+        }
+        isMummy = false;
+        Mining = false;
     }
 
     private void FixedUpdate()
     {
-        Vector2 move = moveInput * moveSpeed * Time.fixedDeltaTime;
+        if (isMummy || Mining) return;
+            Vector2 move = moveInput * moveSpeed * Time.fixedDeltaTime;
         rb.MovePosition(rb.position + move);
 
         // Always set animator parameters to last facing direction
@@ -132,10 +156,18 @@ public class MovementController2D : MonoBehaviour
         {
             anim[i].SetBool("Walking", false);
         }
+        for (int i = 0; i < anim.Length; i++)
+        {
+            anim[i].SetBool("Mummy", true);
+        }
 
         yield return new WaitForSeconds(duration);
 
         // restore previous speed
         moveSpeed = originalSpeed;
+        for (int i = 0; i < anim.Length; i++)
+        {
+            anim[i].SetBool("Mummy", false);
+        }
     }
 }
