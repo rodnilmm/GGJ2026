@@ -763,6 +763,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Music_randomizer
       objectReference: {fileID: 0}
+    - target: {fileID: 6347981290031742962, guid: bdd41d3123a68ee4c8a5c483091673c1, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7197860790244933171, guid: bdd41d3123a68ee4c8a5c483091673c1, type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7197860790244933171, guid: bdd41d3123a68ee4c8a5c483091673c1, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 424cfb3b87d036f4e9706edbe88e8d57, type: 3}
+    - target: {fileID: 7197860790244933171, guid: bdd41d3123a68ee4c8a5c483091673c1, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 24300002, guid: 3e156b86b864a004292c6fba7604c216, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1271,7 +1287,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5751867689258245932, guid: 10d01240acfa80a43a4156c2c78c1063, type: 3}
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 4124116371163597375, guid: 10d01240acfa80a43a4156c2c78c1063, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 8328711541586553298, guid: 10d01240acfa80a43a4156c2c78c1063, type: 3}
       insertIndex: 0

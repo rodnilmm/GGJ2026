@@ -16,6 +16,27 @@ public class AnubisMask : MonoBehaviour
     private bool pickedUp;
     private bool isActive;
     private readonly HashSet<MovementController2D> recentlyImmobilized = new HashSet<MovementController2D>();
+    private AudioSource pickupSound;
+    private AudioSource mainLoop;
+
+    private void Awake()
+    {
+        mainLoop = GameObject.FindGameObjectWithTag("Musica")?.GetComponent<AudioSource>();
+        pickupSound = GameObject.FindGameObjectWithTag("Anubis")?.GetComponent<AudioSource>();
+
+        if (mainLoop != null)
+        {
+            mainLoop.volume = 1f;
+            if (!mainLoop.isPlaying)
+                mainLoop.Play();
+        }
+        if (pickupSound != null)
+        {
+            pickupSound.volume = 0f;
+            if (!pickupSound.isPlaying)
+                pickupSound.Play();
+        }
+    }
 
     private void Update()
     {
@@ -45,6 +66,14 @@ public class AnubisMask : MonoBehaviour
 
                 // mark active and start lifetime coroutine
                 isActive = true;
+                if (pickupSound != null)
+                {
+                    pickupSound.volume = 1f;
+                }
+                if (mainLoop != null)
+                {
+                    mainLoop.volume = 0f;
+                }
                 StartCoroutine(BuffLifetime());
 
                 // NOTE: keep collider enabled so mask can hit other players while hovering
@@ -84,6 +113,14 @@ public class AnubisMask : MonoBehaviour
 
     public void EndBuff()
     {
+        if (pickupSound != null)
+        {
+            pickupSound.volume = 0f;
+        }
+        if (mainLoop != null)
+        {
+            mainLoop.volume = 1f;
+        }
         // optionally play VFX or detach before destroy
         Destroy(gameObject);
     }
