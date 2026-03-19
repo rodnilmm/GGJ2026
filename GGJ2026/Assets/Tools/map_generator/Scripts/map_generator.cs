@@ -4,7 +4,7 @@ using UnityEngine.Tilemaps;
 public class BiomeGenerator : MonoBehaviour {
     [SerializeField] private Transform parentContainer; // Container for spawned objects
     public GameObject[] rockTilePrefabs, sandTilePrefabs;
-    public int width = 49, height = 26;
+    private int width, height;
     public Transform player1InitPosition, player2InitPosition, player3InitPosition, player4InitPosition, objectivePosition;
     public float cellSize = 1f; // Size of each cell in world units
 
@@ -41,60 +41,76 @@ public class BiomeGenerator : MonoBehaviour {
         Debug.Log("Initial player positions: P1 " + player1InitPosition.position + " P2 " + player2InitPosition.position +
                   " P3 " + player3InitPosition.position + " P4 " + player4InitPosition.position +
                   " Objective " + objectivePosition.position);
-        // Get tilemap reference for proper cell-to-world conversion
+
         Tilemap tilemap = parentContainer.GetComponent<Tilemap>();
-        
+
         if (seed == 0)
         {
             seed = Random.Range(0f, 10000f);
         }
 
-        for (int x = 0; x < width-1; x++) {
-            for (int y = 1; y < height; y++) {
-                // Use tilemap's cell-to-world conversion for proper alignment
+        // Resolve iteration bounds and world origin from the container
+        BoundsInt cellBounds;
+        Vector3 worldMin;
+        if (tilemap != null)
+        {
+            cellBounds = tilemap.cellBounds;
+            worldMin = Vector3.zero; // unused; tilemap.GetCellCenterWorld handles positioning
+        }
+        else
+        {
+            Collider col = parentContainer.GetComponent<Collider>();
+            worldMin = col != null ? col.bounds.min : parentContainer.position;
+            cellBounds = new BoundsInt(0, 0, 0, width, height, 1);
+        }
+
+        for (int x = cellBounds.xMin; x < cellBounds.xMax; x++) {
+            for (int y = cellBounds.yMin; y < cellBounds.yMax; y++) {
                 Vector3Int cellPos = new Vector3Int(x, y, 0);
                 Vector3 cellWorldPos;
-                
+
                 if (tilemap != null)
                 {
                     cellWorldPos = tilemap.GetCellCenterWorld(cellPos);
-                    cellWorldPos.z = cellWorldPos.z + zOffset;
+                    cellWorldPos.z += zOffset;
                 }
                 else
                 {
-                    Vector3 containerPos = parentContainer.position;
+                    int lx = x - cellBounds.xMin;
+                    int ly = y - cellBounds.yMin;
                     cellWorldPos = new Vector3(
-                        containerPos.x + x * cellSize, 
-                        containerPos.y + y * cellSize, 
-                        containerPos.z + zOffset
+                        worldMin.x + (lx + 0.5f) * cellSize,
+                        worldMin.y + (ly + 0.5f) * cellSize,
+                        worldMin.z + zOffset
                     );
                 }
-                
+
+                if (!IsWithinContainerBounds(cellPos, cellWorldPos))
+                    continue;
+
                 if (IsPlayerPosition(cellWorldPos) || IsObjectivePosition(cellWorldPos)){
                     Debug.Log("Skipping player/objective position at: " + cellWorldPos);
-                    continue; // Skip placing objects where players start or objective is
+                    continue;
                 }
 
-                // Calculate Perlin noise coordinate
-                float xCoord = (float)x / width * scale + seed;
-                float yCoord = (float)y / height * scale + seed;
+                // Normalize noise coordinates to [0, scale] over the full bounds
+                float xCoord = (float)(x - cellBounds.xMin) / width * scale + seed;
+                float yCoord = (float)(y - cellBounds.yMin) / height * scale + seed;
                 float noiseValue = Mathf.PerlinNoise(xCoord, yCoord);
 
-                // Spawn prefabs based on noise thresholds
                 GameObject prefabToSpawn = null;
                 if (noiseValue < 0.55f)
                     prefabToSpawn = null;
-                else if (noiseValue < 0.8f) 
+                else if (noiseValue < 0.8f)
                     prefabToSpawn = GetRandomPrefab(sandTilePrefabs);
                 else
                     prefabToSpawn = GetRandomPrefab(rockTilePrefabs);
-                
+
                 if (prefabToSpawn != null)
                 {
                     GameObject spawnedObj = Instantiate(prefabToSpawn, cellWorldPos, Quaternion.identity, parentContainer);
                     spawnedObj.name = $"{prefabToSpawn.name}_{x}_{y}";
-                    
-                    // Set sorting order
+
                     SpriteRenderer spriteRenderer = spawnedObj.GetComponent<SpriteRenderer>();
                     if (spriteRenderer != null)
                     {
@@ -174,6 +190,30 @@ public class BiomeGenerator : MonoBehaviour {
         if (prefabArray == null || prefabArray.Length == 0)
             return null;
         return prefabArray[Random.Range(0, prefabArray.Length)];
+    }
+
+    /// <summary>
+    /// Returns true if the cell falls within the actual shape of the container,
+    /// handling irregular forms (tilemap with holes, non-rectangular colliders).
+    /// </summary>
+    private bool IsWithinContainerBounds(Vector3Int cellPos, Vector3 worldPos)
+    {
+        // Tilemap: only generate on cells that have a tile painted (respects holes and irregular shapes)
+        Tilemap tilemap = parentContainer.GetComponent<Tilemap>();
+        if (tilemap != null)
+            return tilemap.HasTile(cellPos);
+
+        // 2D collider: OverlapPoint correctly handles circles, polygons, etc.
+        Collider2D col2D = parentContainer.GetComponent<Collider2D>();
+        if (col2D != null)
+            return col2D.OverlapPoint(new Vector2(worldPos.x, worldPos.y));
+
+        // 3D collider: bounds.Contains is accurate for box colliders; approximation for others
+        Collider col = parentContainer.GetComponent<Collider>();
+        if (col != null)
+            return col.bounds.Contains(worldPos);
+
+        return true;
     }
 
     /// <summary>

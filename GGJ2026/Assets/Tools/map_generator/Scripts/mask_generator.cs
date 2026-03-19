@@ -6,7 +6,7 @@ public class TilemapManhattanGenerator : MonoBehaviour
 {
     [SerializeField] private Tilemap tilemap;
     public GameObject[] masks; 
-    public int maskCount = 7; // Number of mask copies to generate
+    public int maskCount = 4; // Number of mask copies to generate
     public Transform player1InitPosition, player2InitPosition, player3InitPosition, player4InitPosition;
     public int minManhattanDistance = 4; // Distance in "steps"
     public float zOffset = 3.0f; // Z position for spawned masks
