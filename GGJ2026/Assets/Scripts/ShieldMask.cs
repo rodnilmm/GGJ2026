@@ -106,6 +106,22 @@ public class ShieldMask : MonoBehaviour
             }
         }
 
+        // Only neutralize other masks while this shield buff is active
+        if (!isActive)
+        {
+            return;
+        }
+
+        // Prevent neutralizing masks that belong to the same player that holds this shield.
+        // If the collided object is parented under a player with a MovementController2D and
+        // that player is our targetOwner, ignore the collision.
+        var collidedPlayerTransform = collision.GetComponentInParent<MovementController2D>()?.transform;
+        if (collidedPlayerTransform != null && targetPlayer != null && collidedPlayerTransform == targetPlayer)
+        {
+            // It's the same player who holds this shield — do not neutralize their own masks/buffs.
+            return;
+        }
+
         // If the thing that collided is an AnubisMask (or a child of it), neutralize that mask
         var anubis = collision.GetComponentInParent<AnubisMask>();
         // If the thing that collided is a SobekMask (or a child of it), neutralize that mask too
