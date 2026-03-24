@@ -4,33 +4,38 @@ using UnityEngine.Tilemaps;
 
 public class TilemapManhattanGenerator : MonoBehaviour
 {
-    [SerializeField] private Tilemap tilemap;
-    public GameObject[] masks; 
+    [SerializeField] private Transform mapBounds;
+    public GameObject[] masks;
     public int maskCount = 4; // Number of mask copies to generate
-    public Transform player1InitPosition, player2InitPosition, player3InitPosition, player4InitPosition;
     public int minManhattanDistance = 4; // Distance in "steps"
-    public float zOffset = 3.0f; // Z position for spawned masks
+    public float zOffset = 1.0f; // Z position for spawned masks (below tiles at z=2)
 
     [Header("Execution")]
     [SerializeField] private bool autoGenerateOnStart = false; // Set to false to allow orchestrator control
 
     private List<Vector3Int> occupiedCells = new List<Vector3Int>();
+    private List<Vector3> generatedPositions = new List<Vector3>();
+    private bool externalOccupiedCells = false;
 
-    void Awake()
+    public void SetMapBounds(Transform bounds)
     {
-        // Auto-find Tilemap if not assigned
-        if (tilemap == null)
-        {
-            tilemap = GetComponent<Tilemap>();
-            if (tilemap == null)
-            {
-                tilemap = FindFirstObjectByType<Tilemap>();
-            }
-            if (tilemap == null)
-            {
-                Debug.LogError("TilemapManhattanGenerator: Tilemap not assigned and none found in scene. Please assign a Tilemap or add one to the scene.");
-            }
-        }
+        mapBounds = bounds;
+    }
+
+    public void SetMasks(GameObject[] maskPrefabs)
+    {
+        masks = maskPrefabs;
+    }
+
+    public void SetMaskCount(int count)
+    {
+        maskCount = count;
+    }
+
+    public void SetOccupiedCells(List<Vector3Int> cells)
+    {
+        occupiedCells = cells;
+        externalOccupiedCells = true;
     }
 
     void Start()
@@ -43,35 +48,23 @@ public class TilemapManhattanGenerator : MonoBehaviour
 
     /// <summary>
     /// Generates placement of masks on existing tiles using Manhattan distance.
-    /// Should be called after BiomeGenerator.GenerateMap() to ensure tiles are populated.
     /// </summary>
     public void GenerateOnTilemap()
     {
+        Tilemap tilemap = mapBounds != null ? mapBounds.GetComponent<Tilemap>() : null;
+
         if (tilemap == null)
         {
             Debug.LogError("TilemapManhattanGenerator: Cannot generate without a Tilemap assigned.");
             return;
         }
 
-        if ( player1InitPosition == null || player2InitPosition == null)
-        {
-            Debug.LogWarning("TilemapManhattanGenerator: playerInitPosition not assigned. Placement may be unexpected.");
-        }
+        // Clear only when not using a shared external list
+        if (!externalOccupiedCells)
+            occupiedCells.Clear();
+        generatedPositions.Clear();
 
-        // Clear occupied cells for fresh generation
-        occupiedCells.Clear();
-
-        // 1. Convert player 1 starting position to Cell Space
-        Vector3Int fixedCell = tilemap.WorldToCell(player1InitPosition.position);
-        occupiedCells.Add(fixedCell);
-        fixedCell = tilemap.WorldToCell(player2InitPosition.position);
-        occupiedCells.Add(fixedCell);
-        fixedCell = tilemap.WorldToCell(player3InitPosition.position);
-        occupiedCells.Add(fixedCell);
-        fixedCell = tilemap.WorldToCell(player3InitPosition.position);
-        occupiedCells.Add(fixedCell);
-
-        // 2. Gather all valid tiles
+        // 1. Gather all valid tiles
         List<Vector3Int> availableCells = new List<Vector3Int>();
         BoundsInt bounds = tilemap.cellBounds;
 
@@ -103,12 +96,24 @@ public class TilemapManhattanGenerator : MonoBehaviour
             {
                 Vector3 spawnPos = tilemap.GetCellCenterWorld(candidateCell);
                 spawnPos.z = zOffset;
-                Instantiate(masks[placedCount % masks.Length], spawnPos, Quaternion.identity, tilemap.transform.parent);
-                
+                GameObject spawnedMask = Instantiate(masks[placedCount % masks.Length], spawnPos, Quaternion.identity, mapBounds.parent);
+
+                SpriteRenderer spriteRenderer = spawnedMask.GetComponent<SpriteRenderer>();
+                if (spriteRenderer is not null)
+                {
+                    spriteRenderer.sortingOrder = 0;
+                }
+
+                generatedPositions.Add(spawnPos);
                 occupiedCells.Add(candidateCell);
                 placedCount++;
             }
         }
+    }
+
+    public IReadOnlyList<Vector3> GetGeneratedPositions()
+    {
+        return generatedPositions.AsReadOnly();
     }
 
     bool IsValidManhattan(Vector3Int pos)
@@ -117,7 +122,7 @@ public class TilemapManhattanGenerator : MonoBehaviour
         {
             // Manhattan Calculation: |x1 - x2| + |y1 - y2|
             int distance = Mathf.Abs(pos.x - occupied.x) + Mathf.Abs(pos.y - occupied.y);
-            
+
             if (distance < minManhattanDistance)
             {
                 return false;
