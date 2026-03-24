@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
@@ -11,10 +12,19 @@ using UnityEngine;
 public class MapGenerationOrchestrator : MonoBehaviour
 {
     [SerializeField] private BiomeGenerator biomeGenerator;
-    [SerializeField] private TilemapManhattanGenerator manhattanGenerator;
+    [SerializeField] private TilemapManhattanGenerator commonMaskGenerator;
+    [SerializeField] private TilemapManhattanGenerator objectiveMaskGenerator;
+    [SerializeField] private Transform mapBounds;
+    [SerializeField] private Transform objectiveAreaBounds;
+    [SerializeField] private GameObject[] commonMasks;
+    [SerializeField] private int commonMaskCount = 4;
+    [SerializeField] private GameObject[] objectiveMasks;
+    [SerializeField] private int objectiveMaskCount = 1;
 
     [Header("Execution")]
     [SerializeField] private bool autoGenerateOnStart = true;
+
+    private readonly List<Vector3Int> sharedOccupiedCells = new List<Vector3Int>();
 
     void Awake()
     {
@@ -23,20 +33,27 @@ public class MapGenerationOrchestrator : MonoBehaviour
         {
             biomeGenerator = FindFirstObjectByType<BiomeGenerator>();
         }
-
-        if (manhattanGenerator == null)
-        {
-            manhattanGenerator = FindFirstObjectByType<TilemapManhattanGenerator>();
-        }
-
         if (biomeGenerator == null)
         {
             Debug.LogError("MapGenerationOrchestrator: BiomeGenerator not found. Please assign it or ensure it exists in the scene.");
         }
 
-        if (manhattanGenerator == null)
+        if (objectiveMaskGenerator == null)
         {
-            Debug.LogError("MapGenerationOrchestrator: TilemapManhattanGenerator not found. Please assign it or ensure it exists in the scene.");
+            objectiveMaskGenerator = FindFirstObjectByType<TilemapManhattanGenerator>();
+        }
+        if (objectiveMaskGenerator == null)
+        {
+            Debug.LogError("MapGenerationOrchestrator: ObjectiveMaskGenerator not found. Please assign it or ensure it exists in the scene.");
+        }
+
+        if (commonMaskGenerator == null)
+        {
+            commonMaskGenerator = FindFirstObjectByType<TilemapManhattanGenerator>();
+        }
+        if (commonMaskGenerator == null)
+        {
+            Debug.LogError("MapGenerationOrchestrator: CommonMaskGenerator not found. Please assign it or ensure it exists in the scene.");
         }
     }
 
@@ -49,11 +66,11 @@ public class MapGenerationOrchestrator : MonoBehaviour
     }
 
     /// <summary>
-    /// Triggers sequential generation: BiomeGenerator first, then TilemapManhattanGenerator.
+    /// Triggers sequential generation: ObjectiveMaskGenerator first, then TilemapManhattanGenerator, then BiomeGenerator.
     /// </summary>
     public void GenerateMap()
     {
-        if (biomeGenerator == null || manhattanGenerator == null)
+        if (biomeGenerator == null || commonMaskGenerator == null)
         {
             Debug.LogError("MapGenerationOrchestrator: Cannot generate map. One or both generators are missing.");
             return;
@@ -61,15 +78,38 @@ public class MapGenerationOrchestrator : MonoBehaviour
 
         Debug.Log("MapGenerationOrchestrator: Starting map generation...");
 
-        // Step 1: Generate base tiles
+        sharedOccupiedCells.Clear();
+
+        // Step 1: Place objective mask on generated tiles
+        Debug.Log("MapGenerationOrchestrator: Running TilemapManhattanGenerator.GenerateOnTilemap() for objective masks");
+        objectiveMaskGenerator.SetMapBounds(objectiveAreaBounds);
+        objectiveMaskGenerator.SetMasks(objectiveMasks);
+        objectiveMaskGenerator.SetMaskCount(objectiveMaskCount);
+        objectiveMaskGenerator.SetOccupiedCells(sharedOccupiedCells);
+        objectiveMaskGenerator.GenerateOnTilemap();
+        Debug.Log("MapGenerationOrchestrator: sharedOccupiedCells after objective mask placement: " + sharedOccupiedCells.Count);
+
+        // Step 1b: Pass objective mask cells to BiomeGenerator so those cells are skipped during generation,
+        // then spawn a sand tile at each objective mask position
+        biomeGenerator.SetMapBounds(mapBounds);
+        biomeGenerator.SetObjectiveMaskCells(new List<Vector3Int>(sharedOccupiedCells));
+        biomeGenerator.SpawnSandTilesAtPositions(objectiveMaskGenerator.GetGeneratedPositions());
+
+        // Step 2: Place common masks on generated tiles
+        Debug.Log("MapGenerationOrchestrator: Running TilemapManhattanGenerator.GenerateOnTilemap()");
+        commonMaskGenerator.SetMapBounds(mapBounds);
+        commonMaskGenerator.SetMasks(commonMasks);
+        commonMaskGenerator.SetMaskCount(commonMaskCount);
+        commonMaskGenerator.SetOccupiedCells(sharedOccupiedCells);
+        commonMaskGenerator.GenerateOnTilemap();
+        Debug.Log("MapGenerationOrchestrator: sharedOccupiedCells after common mask placement: " + sharedOccupiedCells.Count);
+
+        // Step 3: Generate base tiles
         Debug.Log("MapGenerationOrchestrator: Running BiomeGenerator.GenerateMap()");
         biomeGenerator.GenerateMap();
 
-        // Step 2: Place masks on generated tiles
-        Debug.Log("MapGenerationOrchestrator: Running TilemapManhattanGenerator.GenerateOnTilemap()");
-        manhattanGenerator.GenerateOnTilemap();
-
         Debug.Log("MapGenerationOrchestrator: Map generation complete!");
+
     }
 
     /// <summary>
@@ -94,13 +134,13 @@ public class MapGenerationOrchestrator : MonoBehaviour
     /// </summary>
     public void RegeneratePlacement()
     {
-        if (manhattanGenerator == null)
+        if (commonMaskGenerator == null)
         {
             Debug.LogError("MapGenerationOrchestrator: Cannot regenerate placement. TilemapManhattanGenerator is missing.");
             return;
         }
 
         Debug.Log("MapGenerationOrchestrator: Regenerating placement...");
-        manhattanGenerator.GenerateOnTilemap();
+        commonMaskGenerator.GenerateOnTilemap();
     }
 }
